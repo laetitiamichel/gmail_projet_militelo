@@ -12,3 +12,111 @@
     <link rel="manifest" href="./favicon/logo http/site.webmanifest">
 
     <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+<header>
+    <!-- MENU GMAIL-->
+    <div class="menu_principal">
+        <ul class="menu_gmail">
+            <li><a class="menu__item" href="#gmail">Gmail</a></li>
+            <li><a class="menu__item" href="#pour_les_pros">POUR LES PROS</a></li>
+            <li><a class="menu__item" href="#connexion">CONNEXION</a></li>
+            <li><a class="menu__item" href="#creer_un_compte">CREER UN COMPTER</a></li>
+        </ul>
+    </div>
+</header>
+<main>
+<nav>
+    <h1 class="accueil">
+        Retrouvez la fluidité et la simplicité de GMail sur tous vos appareils
+    </h1>
+    <div class="bouton_creer_un_compte">
+        <a class="bouton_compte" href="#" target="_blank">CREER UN COMPTE</a>
+    </div>
+    <div class="bouton_fleche">
+        <img class="fleche" id="fleche" src="./asset" alt="fleche du bas">
+    </div>
+</nav>
+
+<!-- page 2 GMAIL => formulaire créer un compte -->
+<div class="formulaire_creer_un_compte" id="creer_un_compte">
+    <h1 class="h1_formulaire">
+        Une boîte de réception <br>
+        entièrement repensée
+    </h1>
+    <h2 class="h2_formulaire">
+        Avec les nouveaux onglets êrsonnalisables, repérez <br>
+        immédiatement les nouveaux messages et choisisser <br>
+        ceux que vous souhaitez lire en priorité.
+    </h2>
+    <!-- formulaire pour créer un compte -->
+    <div class="inner-form_creer_un_compte" role="forme" aria-labelledby="créer un compte">
+        <fieldset> <!-- encadré qui contient le formulaire-->
+            <legend>
+                Créer un compte
+            </legend>
+            <form action="" method="get">  
+                <label for="user-name">
+                Nom *
+                </label>
+                    <input 
+                    id="nom_formulaire"
+                    type="text"
+                    name="nom"
+                    placeholder="Votre nom" 
+                    autofocus="true" 
+                    aria-required="true">
+
+                <label for="user-lastname">
+                Prénom *
+                </label>
+                    <input
+                    id="prenom_formulaire"
+                    type="text"
+                    name="Prénom"
+                    placeholder="Votre Prénom"
+                    aria-required="true">
+
+                <label for="email">
+                Mail *
+                </label>
+                    <input 
+                    id="email"
+                    type="email"
+                    name="Mail"
+                    placeholder="giusmili67@gmail.com"
+                    aria-required="true"
+                    >
+
+                <label for="mdp">
+                Choisir votre mot de passe *
+                </label>
+                    <input
+                    id="password" 
+                    type="password"
+                    name="password"
+                    placeholder="*****"
+                    aria-required="true">
+
+                <input
+                    type="submit"
+                    value="VALIDER VOTRE COMPTE">
+            </form>
+        </fieldset>    
+    </div>
+    <!-- fin du formulaire pour créer un compte -->
+
+</div>
+<!-- fin de la page 1 -->
+
+
+
+</main>
+
+<footer>
+
+</footer>
+</body>
+</html>
