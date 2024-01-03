@@ -21,4 +21,11 @@ html{ /* sélecteur propriété valeur */
       
   }
 
+  :root{
+    --color-button: #dd5347;
+    --bgcolor: #fafafa;
+  }
+
+
+
   
