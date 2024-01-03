@@ -1,0 +1,24 @@
+/* RESET */
+
+html{ /* sélecteur propriété valeur */
+    font-size: 62.5%;  /* 1.000rem root em 10px */
+    scroll-behavior: smooth;
+  }
+  body{
+      font: 1.6rem sans-serif;
+      height: 100vh;
+      margin: 0;
+      letter-spacing: 5px;
+      position: relative;
+  }
+  h1,h2,h3{
+    margin: 0;
+  }
+  main{
+     max-width: 120rem;
+      margin: auto;
+      overflow: hidden;
+      
+  }
+
+  
