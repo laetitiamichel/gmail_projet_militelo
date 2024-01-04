@@ -1,9 +1,9 @@
 :root{
     --color-button-gmail: #dd5347;
     --bgcolor: #fafafa;
-    --bgcolor-formulaire: #ECEAC4ff;
-    --bgcolor-formulaire-gris: #B8B7B7ff;
-    --color-button: #4D73E0ff;
+    --bgcolor-formulaire: #F9F7C9;
+    --bgcolor-formulaire-gris: #F2F2F2;
+    --color-button: #4E7CD9;
   }
 
 input[type="text"], 
@@ -17,12 +17,11 @@ input[type="submit"]{
 
 .inner-form_creer_un_compte fieldset{
     border-radius: 1rem;
-    border: var(--bgcolor-formulaire-gris);
+    border: solid .1rem #D0D0D0;
 }
 .inner-form_creer_un_compte fieldset legend{
     padding: 1rem;
     font-size: large;
-    font-variant: small-caps; /* petites capitales */
 }
 .inner-form_creer_un_compte{
     max-width: 90rem;
@@ -30,44 +29,51 @@ input[type="submit"]{
 }
 .inner-form_creer_un_compte form *{
     display: block;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .inner-form_creer_un_compte form input{
-    /* border: solid .1rem #333; */
+    border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
     width: 100%;
     line-height: 3.5rem;
-    padding: .5rem;
+    padding: 0 .1rem;
     transition: all .6s ease-in-out;
 }
 
-.inner-form_creer_un_compte form input[type="text"], 
+.inner-form_creer_un_compte form input[type="text"]{
+    border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
+    background: rgb(242,242,242, .8); 
+    color: #D0D0D0;
+    font-weight: lighter;
+}
+
 .inner-form_creer_un_compte form input[type="password"],
 .inner-form_creer_un_compte form input[type="email"]{
-    
-    border-bottom: solid .1rem #ccc; 
-  
-    background: rgb(204,204,204);
-    background: var(--bgcolor-formulaire-gris); 
-    width: 60%;
-
+    border-bottom: solid .1rem #ccc;
+    background: var(--bgcolor-formulaire); 
+    color:black;
 }
 
 .inner-form_creer_un_compte form [placeholder]{
-    font-style: italic;
     transition: all .6s ease-in-out;
+    padding: 0.1rem;
+    /* text-decoration: black;
+    font-weight: bold; */
 }
-.inner-form_creer_un_compte form [placeholder]:focus{
+/* .inner-form_creer_un_compte form [placeholder]:focus{
     font-style: normal;
-}
+    color: #ffffff;
+} */
 /* send button */
 .inner-form_creer_un_compte form input[type="submit"]{
     background-color: var(--color-button);
      margin-top: 1rem;
+     margin-left: auto;
+     margin-right: auto;
      cursor: pointer;
      width: 35%;
      color: #fff;
      text-transform: uppercase;
-     border-radius: .4rem;
+     /* border-radius: .4rem; */
      font-size: medium;
  }

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* RESET */
 
 html{ /* sélecteur propriété valeur */
@@ -8,7 +9,7 @@ html{ /* sélecteur propriété valeur */
       font: 1.6rem sans-serif;
       height: 100vh;
       margin: 0;
-      letter-spacing: 5px;
+      letter-spacing: 1px;
       position: relative;
   }
   h1,h2,h3{
