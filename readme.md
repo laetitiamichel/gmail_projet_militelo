@@ -2,11 +2,14 @@ Lien du site =
 
 # CHARTRE GRAPHIQUE =
 
-![ChartreGraphiqueGmail](https://hackmd.io/_uploads/rkmBT9BOa.png)
-![ChartreGraphiqueFormulaire](https://hackmd.io/_uploads/rkKrp5Su6.png)
+![ChartreGraphiqueGmail](./asset/ChartreGraphiqueGmail.png)
+![ChartreGraphiqueFormulaire](./asset/ChartreGraphiqueFormulaire.png)
 
 # TYPOGRAPHIE =
-![typographieGmail](https://hackmd.io/_uploads/B1ABTcSu6.png)
+![typographieGmail](./asset/typographieGmail.png)
+
+# FAVICONE =
+![favicon.io](./asset/favicon.io.png)
 
 # MENU NAVBAR
 
