@@ -1,0 +1,90 @@
+:root{
+  --color-button-gmail: #dd5347;
+  --bgcolor: #fafafa;
+  --bgcolor-formulaire: #fcf7c3;
+  --bgcolor-formulaire-gris: #f8f5f5;
+  --color-button: #4E7CD9;
+}
+
+.menu_principal {
+    background-color: var(--bgcolor);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: top ease-out 0.2s;
+    border-radius: var(--bgcolor-formulaire-gris);
+  }
+.menu_principal .logo {
+    width: 40px;
+    height: 40px;
+    padding: 6px 15px;
+    
+  }
+  .menu_principal .btn_gmail .item{
+    list-style: none;
+  }
+  .menu_principal .btn_gmail .item a{
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    /* color: var(--bgcolor-formulaire-gris); */
+    transition: 250ms ease-out;
+  }
+.menu_principal .menu_gmail{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+.menu_principal .menu_gmail .item{
+    display: inline-block;
+    cursor: pointer;
+  }
+
+
+.menu_principal .menu_gmail .item a{
+    padding: 10px 20px;
+    text-decoration: none;
+    /* color: var(--bgcolor-formulaire-gris);
+    transition: 250ms ease-out; */
+  }
+
+.menu_principal .menu_gmail .item a:hover {
+    background-color: var(--color-button-gmail);
+  }
+/* .item a:hover {
+    background-color: #555;
+  } */
+  
+#toggle {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    display: none;
+  }
+  .one, .two, .three {
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 4px 0;
+    background-color: #731d1d;
+    transition: 200ms;
+  }
+  .two{
+    width: 25px;
+  }
+  .three{
+    width: 25px;
+    position: relative;
+  }
+  #toggle:hover .two {
+    width: 30px;
+  }
+  #toggle:hover .three {
+    width: 30px;
+  }
+  
