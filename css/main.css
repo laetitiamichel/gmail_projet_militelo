@@ -9,6 +9,7 @@ html{ /* sélecteur propriété valeur */
       font: 1.6rem sans-serif;
       height: 100vh;
       margin: 0;
+      padding: 0;
       letter-spacing: 1px;
       position: relative;
   }
@@ -27,6 +28,13 @@ html{ /* sélecteur propriété valeur */
     --bgcolor: #fafafa;
   }
 
+  .accueil .image_accueil{
+    background-image: url(/asset/home-hero.jpg);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
 
 
   
