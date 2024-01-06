@@ -1,8 +1,8 @@
 :root{
     --color-button-gmail: #dd5347;
     --bgcolor: #fafafa;
-    --bgcolor-formulaire: #F9F7C9;
-    --bgcolor-formulaire-gris: #F2F2F2;
+    --bgcolor-formulaire: #fcf7c3;
+    --bgcolor-formulaire-gris: #f8f5f5;
     --color-button: #4E7CD9;
   }
 
@@ -12,7 +12,7 @@ input[type="email"],
 input[type="submit"]{
     border: 0;
     background: none;
-    font-size: inherit;
+    
 }
 
 .inner-form_creer_un_compte fieldset{
@@ -31,7 +31,9 @@ input[type="submit"]{
     display: block;
     padding: 1rem;
 }
-
+.inner-form_creer_un_compte label{
+    padding-left: 0rem;
+}
 .inner-form_creer_un_compte form input{
     border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
     width: 100%;
@@ -56,7 +58,7 @@ input[type="submit"]{
 
 .inner-form_creer_un_compte form [placeholder]{
     transition: all .6s ease-in-out;
-    padding: 0.1rem;
+    padding: 0.8rem;
     /* text-decoration: black;
     font-weight: bold; */
 }
@@ -67,13 +69,12 @@ input[type="submit"]{
 /* send button */
 .inner-form_creer_un_compte form input[type="submit"]{
     background-color: var(--color-button);
-     margin-top: 1rem;
-     margin-left: auto;
-     margin-right: auto;
-     cursor: pointer;
-     width: 35%;
-     color: #fff;
-     text-transform: uppercase;
-     /* border-radius: .4rem; */
-     font-size: medium;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 35%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: medium;
  }

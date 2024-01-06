@@ -1,28 +1,26 @@
 :root{
     --color-button-gmail: #dd5347;
     --bgcolor: #fafafa;
-    --bgcolor-formulaire: #ECEAC4ff;
-    --bgcolor-formulaire-gris: #B8B7B7ff;
+    --bgcolor-formulaire: #fcf7c3;
+    --bgcolor-formulaire-gris: #f8f5f5;
     --color-button: #4D73E0ff;
   }
-
-
-input[type="password"],
-input[type="email"],
-input[type="submit"]{
-    border: 0;
-    background: none;
-    font-size: inherit;
-}
+  input[type="text"], 
+  input[type="password"],
+  input[type="email"],
+  input[type="submit"]{
+      
+      background: none;
+      font-size: inherit;
+  }
 
 .inner-form_connexion fieldset{
     border-radius: 1rem;
-    border: var(--bgcolor-formulaire-gris);
+    border: solid .1rem #D0D0D0;
 }
 .inner-form_connexion fieldset legend{
     padding: 1rem;
     font-size: large;
-    font-variant: small-caps; /* petites capitales */
 }
 .inner-form_connexion{
     max-width: 90rem;
@@ -30,44 +28,48 @@ input[type="submit"]{
 }
 .inner-form_connexion form *{
     display: block;
-    padding: 1rem 0;
+    padding-left: 0.8rem;
+    padding: 1rem;
 }
-
+.inner-form_connexion label{
+    padding-left: 0rem;
+}
 .inner-form_connexion form input{
-    /* border: solid .1rem #333; */
+    /* border-bottom: solid .1rem var(--bgcolor-formulaire); */
     width: 100%;
     line-height: 3.5rem;
-    padding: .5rem;
+    padding: 0 .1rem;
     transition: all .6s ease-in-out;
+    
 }
 
  
 .inner-form_connexion form input[type="password"],
 .inner-form_connexion form input[type="email"]{
-    
     border-bottom: solid .1rem #ccc; 
-  
-    background: rgb(204,204,204);
-    background: var(--bgcolor-formulaire-gris); 
-    width: 60%;
-
+    background: var(--bgcolor-formulaire); 
+    /* width: 60%; */
+    color:black;
 }
 
 .inner-form_connexion form [placeholder]{
-    font-style: italic;
     transition: all .6s ease-in-out;
+    padding: 0.8rem;
+    
 }
-.inner-form_connexion form [placeholder]:focus{
+/* .inner-form_connexion form [placeholder]:focus{
     font-style: normal;
-}
+} */
+
 /* send button */
 .inner-form_connexion form input[type="submit"]{
     background-color: var(--color-button);
-     margin-top: 1rem;
-     cursor: pointer;
-     width: 35%;
-     color: #fff;
-     text-transform: uppercase;
-     border-radius: .4rem;
-     font-size: medium;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 45%;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
  }
