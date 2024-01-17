@@ -5,41 +5,57 @@
     --bgcolor-formulaire-gris: #f8f5f5;
     --color-button: #4D73E0ff;
   }
-  input[type="text"], 
+ 
+
+.h1_formulaire_connexion{
+    display: block;
+    width: 40%;
+    text-align: center;
+    padding: 3rem;
+    margin: 2rem auto 2rem;
+    font-size: x-large;
+    font-weight: lighter;
+  
+   } 
+  
+   
+
   input[type="password"],
   input[type="email"],
   input[type="submit"]{
-      
-      background: none;
-      font-size: inherit;
+    border: 0;
+    background: none;
   }
 
+/* encadré du formulaire: */
 .inner-form_connexion fieldset{
     border-radius: 1rem;
     border: solid .1rem #D0D0D0;
 }
+
+/* légende du formulaire: connexion à un compte: */
 .inner-form_connexion fieldset legend{
     padding: 1rem;
-    font-size: large;
+    font-weight: bolder;
 }
+
 .inner-form_connexion{
-    max-width: 90rem;
-    margin: 5rem auto 2rem;
+    width: 50%;
+    margin: 5rem auto 2rem;  
 }
-.inner-form_connexion form *{
+.inner-form_connexion form *{ 
     display: block;
-    padding-left: 0.8rem;
     padding: 1rem;
-}
+} 
 .inner-form_connexion label{
     padding-left: 0rem;
+    font-weight: bolder;
 }
 .inner-form_connexion form input{
-    /* border-bottom: solid .1rem var(--bgcolor-formulaire); */
+    border-bottom: solid .1rem var(--bgcolor-formulaire); 
     width: 100%;
     line-height: 3.5rem;
     padding: 0 .1rem;
-    transition: all .6s ease-in-out;
     
 }
 
@@ -48,28 +64,30 @@
 .inner-form_connexion form input[type="email"]{
     border-bottom: solid .1rem #ccc; 
     background: var(--bgcolor-formulaire); 
-    /* width: 60%; */
     color:black;
+    font-weight: bolder;
 }
 
 .inner-form_connexion form [placeholder]{
     transition: all .6s ease-in-out;
     padding: 0.8rem;
+    font-weight: bolder;
+ 
     
 }
-/* .inner-form_connexion form [placeholder]:focus{
-    font-style: normal;
-} */
 
-/* send button */
+/*Bouton connexion */
 .inner-form_connexion form input[type="submit"]{
     background-color: var(--color-button);
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    width: 45%;
+    width: 50%;
+    height: auto;
+    align-items: center;
     color: #fff;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-size: small;
+    
  }

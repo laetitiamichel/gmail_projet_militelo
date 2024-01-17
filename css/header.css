@@ -1,0 +1,61 @@
+:root{
+  --color-button-gmail: #dd5347;
+  --bgcolor: #fafafa;
+  --bgcolor-formulaire: #fcf7c3;
+  --bgcolor-formulaire-gris: #f8f5f5;
+  --color-button: #4E7CD9;
+}
+
+
+.menu_principal {
+    background-color: var(--bgcolor);
+    width: 100%;
+    padding:1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    border-radius: var(--bgcolor-formulaire-gris);
+  }
+
+img.logo{
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 2rem;
+}
+h1.item_gmail{ 
+    display: inline-block;
+    text-decoration: none;
+    color: #545454;
+    font-size: x-large;
+  }
+
+.menu_principal .menu_gmail{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    
+  }
+
+  .imageGmail figcaption{
+    display: inline-block;
+  }
+
+.menu_principal .menu_gmail .item{
+    display: inline-block;
+    cursor: pointer;
+    color: var(--bgcolor-formulaire-gris);
+  }
+
+
+.menu_principal .menu_gmail .item a{
+    padding: 5rem;
+    text-decoration: none;
+    color: black;
+  }
+
+.menu_principal .menu_gmail .item a:hover {
+    background-color: var(--color-button-gmail);
+    padding: 5rem;
+  }

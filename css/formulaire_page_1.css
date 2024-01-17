@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 :root{
     --color-button-gmail: #dd5347;
     --bgcolor: #fafafa;
@@ -5,6 +6,29 @@
     --bgcolor-formulaire-gris: #f8f5f5;
     --color-button: #4E7CD9;
   }
+
+
+  h1.h1_formulaire{
+    display: block;
+    width: 40%;
+    text-align: center;
+    padding: 5rem;
+    margin: 2rem auto 2rem;
+    font-size: x-large;
+
+   }
+  
+   h2.h2_formulaire{
+    display:block;
+    width: 40%;
+    margin: 2rem auto 2rem;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    font-size: small;
+  
+    
+   }
 
 input[type="text"], 
 input[type="password"],
@@ -24,7 +48,7 @@ input[type="submit"]{
     font-size: large;
 }
 .inner-form_creer_un_compte{
-    max-width: 90rem;
+    width: 50%;
     margin: 5rem auto 2rem;
 }
 .inner-form_creer_un_compte form *{
@@ -33,13 +57,14 @@ input[type="submit"]{
 }
 .inner-form_creer_un_compte label{
     padding-left: 0rem;
+    font-weight: bolder;
 }
 .inner-form_creer_un_compte form input{
     border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
     width: 100%;
     line-height: 3.5rem;
     padding: 0 .1rem;
-    transition: all .6s ease-in-out;
+   
 }
 
 .inner-form_creer_un_compte form input[type="text"]{
@@ -54,18 +79,15 @@ input[type="submit"]{
     border-bottom: solid .1rem #ccc;
     background: var(--bgcolor-formulaire); 
     color:black;
+    font-weight: bolder;
 }
 
 .inner-form_creer_un_compte form [placeholder]{
     transition: all .6s ease-in-out;
     padding: 0.8rem;
-    /* text-decoration: black;
-    font-weight: bold; */
+   
 }
-/* .inner-form_creer_un_compte form [placeholder]:focus{
-    font-style: normal;
-    color: #ffffff;
-} */
+
 /* send button */
 .inner-form_creer_un_compte form input[type="submit"]{
     background-color: var(--color-button);
@@ -73,8 +95,9 @@ input[type="submit"]{
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
-    width: 35%;
+    width: 50%;
+    height: auto;
     color: #fff;
     text-transform: uppercase;
-    font-size: medium;
+    font-size: small;
  }
