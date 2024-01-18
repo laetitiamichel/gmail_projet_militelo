@@ -56,9 +56,18 @@ h1.item_gmail{
     text-decoration: none;
     color: black;
   }
+ 
+ 
 
-.menu_principal .menu_gmail .item a:hover {
+.menu_principal .menu_gmail .item a:hover{
     background-color: var(--color-button-gmail);
     padding: 5rem;
     color: var(--bgcolor);
   }
+  .active-page{
+    color: var(--bgcolor)!important;
+    background-color: var(--color-button-gmail);
+  }
+
+  
+  
