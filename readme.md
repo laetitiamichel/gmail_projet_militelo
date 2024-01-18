@@ -1,6 +1,6 @@
 Lien du site = [accueil](https://laetitiamichel.github.io/gmail_projet_militelo/)
 
-# CHARTRE GRAPHIQUE =
+# CHARTE GRAPHIQUE =
 
 ![ChartreGraphiqueGmail](https://hackmd.io/_uploads/r1y3vo8Y6.png)
 
