@@ -62,7 +62,7 @@
                 ceux que vous souhaitez lire en priorité.
             </h2>
             <!-- formulaire pour créer un compte -->
-            <div class="inner-form_creer_un_compte" role="forme" aria-labelledby="creer_un_compte">
+            <div class="inner-form_creer_un_compte" role="forme" aria-labelledby="creeruncompte">
                 <fieldset> <!-- encadré qui contient le formulaire-->
                     <legend>
                         Créer un compte
@@ -77,7 +77,8 @@
                             name="nom"
                             placeholder="Votre nom" 
                             autofocus="true" 
-                            aria-required="true">
+                            aria-required="true"
+                            aria-labelledby="nomformulairecreeruncompte">
         
                         <label for="user-lastname">
                         Prénom*
@@ -87,7 +88,8 @@
                             type="text"
                             name="Prénom"
                             placeholder="Votre Prénom"
-                            aria-required="true">
+                            aria-required="true"
+                            aria-labelledby="prenomformulaireconnexion">
         
                         <label for="email">
                         Mail*
@@ -98,7 +100,7 @@
                             name="Mail"
                             placeholder="giusmili67@gmail.com"
                             aria-required="true"
-                            >
+                            aria-labelledby="emailconnexion">
         
                         <label for="mdp">
                         Choisir votre mot de passe*
@@ -108,11 +110,13 @@
                             type="password"
                             name="password"
                             placeholder="*****"
-                            aria-required="true">
+                            aria-required="true"
+                            aria-labelledby="mdpconnexion">
         
                         <input
                             type="submit"
-                            value="VALIDER VOTRE COMPTE">
+                            value="valider votre compte"
+                            aria-labelledby="submit">
                     </form>
                 </fieldset>    
             </div>
