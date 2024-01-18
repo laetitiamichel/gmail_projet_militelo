@@ -101,5 +101,7 @@ input[type="submit"]{
     height: auto;
     color: #fff;
     text-transform: uppercase;
-    font-size: small;
+    font-size: inherit;
+    line-height: 5rem;
+    border-radius: .4rem;
  }

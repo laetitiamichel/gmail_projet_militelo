@@ -69,5 +69,10 @@ h1.item_gmail{
     background-color: var(--color-button-gmail);
   }
 
+  .active-page2{
+    color: var(--bgcolor)!important;
+    background-color: var(--color-button-gmail);
+  }
+
   
   
