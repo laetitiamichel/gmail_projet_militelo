@@ -62,17 +62,18 @@
                 ceux que vous souhaitez lire en priorité.
             </h2>
             <!-- formulaire pour créer un compte -->
-            <div class="inner-form_creer_un_compte" role="forme" aria-labelledby="creeruncompte">
+            <div class="inner-form_creer_un_compte" 
+            aria-labelledby="creeruncompte nomCreerUnComptee prenomCreerUnCompte emailcreation mdpCreation btncreationcompte">
                 <fieldset> <!-- encadré qui contient le formulaire-->
                     <legend>
                         Créer un compte
                     </legend>
-                    <form action="#" method="get">  
-                        <label for="user-name">
+                    <form action="#" method="get" id="creeruncompte">  
+                        <label for="nomCreerUnCompte">
                          Nom*
                         </label>
                             <input 
-                            id="nomFormulaireCreerUnCompte"
+                            id="nomCreerUnCompte"
                             type="text"
                             name="nom"
                             placeholder="Votre nom" 
@@ -80,18 +81,18 @@
                             aria-required="true"
                             >
         
-                        <label for="user-lastname">
+                        <label for="prenomCreerUnCompte">
                         Prénom*
                         </label>
                             <input
-                            id="prenomFormulaireConnexion"
+                            id="prenomConnexion"
                             type="text"
                             name="Prénom"
                             placeholder="Votre Prénom"
                             aria-required="true"
                             >
         
-                        <label for="email">
+                        <label for="emailcreation">
                         Mail*
                         </label>
                             <input 
@@ -102,7 +103,7 @@
                             aria-required="true"
                             >
         
-                        <label for="mdp">
+                        <label for="mdpCreation">
                         Choisir votre mot de passe*
                         </label>
                             <input
@@ -126,30 +127,31 @@
         
         <!-- page 2 GMAIL => formulaire CONNEXION -->
 
-        <div class="formulaire_connexion" id="connexion" role="region">
+        <div class="formulaire_connexion" id="connexion">
             <h1 class="h1_formulaire_connexion">
                 Bienvenue dans votre espace null
             </h1>
             
             <!-- formulaire pour se connecter -->
-            <div class="inner-form_connexion" role="forme" aria-labelledby="connexion">
-                <fieldset> <!-- encadré qui contient le formulaire-->
+            <div class="inner-form_connexion" aria-labelledby="connexion emailConnexion mdpconnexion btnConnexion">
+                <!-- encadré qui contient le formulaire-->
+                <fieldset> 
                     <legend>
                         Connectez-vous à votre compte
                     </legend>
                     <form action="#" method="get">  
-                        <label for="email">
+                        <label for="emailConnexion">
                         Mail ou login*
                         </label>
                             <input 
-                            id="emailconnexion"
+                            id="emailConnexion"
                             type="email"
                             name="Mail"
                             placeholder="giusmili67@gmail.com"
                             aria-required="true"
                             >
         
-                        <label for="mdp">
+                        <label for="mdpconnexion">
                         Mot de passe*
                         </label>
                             <input 
@@ -160,7 +162,10 @@
                             aria-required="true"
                             >
         
-                        <input id="btnConnexion" type="submit" value="connexion à votre compte" aria-labelledby="btnConnexion">
+                        <input 
+                        id="btnConnexion" 
+                        type="submit" 
+                        value="connexion à votre compte">
                     </form>
                 </fieldset>    
             </div>
