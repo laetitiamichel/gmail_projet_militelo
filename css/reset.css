@@ -110,6 +110,7 @@ header,figure,nav,main{
   height: 5rem;
   background-color: var(--color-button-gmail);
   clip-path: ellipse(50% 50%);
+  padding: 1rem;
   
 }
 
