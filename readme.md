@@ -2,11 +2,13 @@ Lien du site = [accueil](https://laetitiamichel.github.io/gmail_projet_militelo/
 
 # CHARTRE GRAPHIQUE =
 
-![ChartreGraphiqueGmail](https://hackmd.io/_uploads/rkmBT9BOa.png)
-![ChartreGraphiqueFormulaire](https://hackmd.io/_uploads/rkKrp5Su6.png)
+![ChartreGraphiqueGmail](https://hackmd.io/_uploads/r1y3vo8Y6.png)
+
+![ChartreGraphiqueFormulaire](https://hackmd.io/_uploads/HJjnPj8tT.png)
+
 
 # TYPOGRAPHIE =
-![typographieGmail](https://hackmd.io/_uploads/B1ABTcSu6.png)
+![typographieGmail](https://hackmd.io/_uploads/By4pPiLK6.png)
 
 # MENU NAVBAR
 
