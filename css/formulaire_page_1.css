@@ -70,8 +70,9 @@ input[type="submit"]{
 .inner-form_creer_un_compte form input[type="text"]{
     border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
     background: rgb(242,242,242, .8); 
-    color: #D0D0D0;
+    color: #0000;
     font-weight: lighter;
+    font-size: inherit;
 }
 
 .inner-form_creer_un_compte form input[type="password"],
@@ -80,6 +81,7 @@ input[type="submit"]{
     background: var(--bgcolor-formulaire); 
     color:black;
     font-weight: bolder;
+    font-size: inherit;
 }
 
 .inner-form_creer_un_compte form [placeholder]{
