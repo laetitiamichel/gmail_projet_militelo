@@ -10,11 +10,11 @@
 .menu_principal {
     background-color: var(--bgcolor);
     width: 100%;
+    position: fixed;
     padding:1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     border-radius: var(--bgcolor-formulaire-gris);
   }
 

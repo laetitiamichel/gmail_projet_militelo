@@ -108,4 +108,7 @@ header,figure,nav,main{
   clip-path: ellipse(50% 50%);
 }
 
-  
+footer{
+  width: 100%;
+  height: 5rem;
+}
