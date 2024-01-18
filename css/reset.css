@@ -93,16 +93,7 @@ header,figure,nav,main{
   
 }
 
-/* .bouton_fleche img{
-  position: sticky;
-  display: flex;
-  justify-content: flex-end;
-  clip-path:ellipse(50% 50%);
-  background-color: var(--color-button-gmail);
-  width: 5rem;
-  height: 5rem;
-    
-} */
+
 .bouton_fleche {
   position: fixed;
   bottom: 10px;
