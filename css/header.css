@@ -21,7 +21,7 @@
 /* image gmail dans le header: */
 img.logo{
   display: inline-block;
-  vertical-align: center;
+  vertical-align: -.6rem;
   margin-left: 2rem;
 }
 .imageGmail figcaption{
@@ -60,4 +60,5 @@ h1.item_gmail{
 .menu_principal .menu_gmail .item a:hover {
     background-color: var(--color-button-gmail);
     padding: 5rem;
+    color: var(--bgcolor);
   }
