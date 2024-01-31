@@ -3,7 +3,7 @@
 class ControllerBase{
     static function event(){
         
-        if(isset($_POST['mail']) && isset($_POST['pass'])){ # vérification des champs
+        if(isset($_POST['Mail']) && isset($_POST['password'])){ # vérification des champs
                 
             # vérification si le format du mail est correct
             if( filter_var($_POST['Mail'], FILTER_VALIDATE_EMAIL) && $_POST['password']){
