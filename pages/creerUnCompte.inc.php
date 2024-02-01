@@ -69,7 +69,7 @@
                             <input
                             id="prenomConnexion"
                             type="text"
-                            name="Prénom"
+                            name="prenom"
                             placeholder="Votre Prénom"
                             aria-required="true"
                             >
@@ -80,7 +80,7 @@
                             <input 
                             id="emailconnexion"
                             type="email"
-                            name="Mail"
+                            name="mail"
                             placeholder="giusmili67@gmail.com"
                             aria-required="true"
                             >
