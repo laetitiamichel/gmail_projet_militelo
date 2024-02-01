@@ -46,11 +46,14 @@
            <!--  #formulaire pour créer un compte -->
             <div class="inner-form_creer_un_compte" 
             aria-labelledby="creeruncompte nomCreerUnComptee prenomCreerUnCompte emailcreation mdpCreation btncreationcompte">
-                <fieldset> <!-- encadré qui contient le formulaire-->
+                    <?php
+                            include_once __DIR__."/bdd.inc.php";
+                    ?>   
+            <fieldset> <!-- encadré qui contient le formulaire-->
                     <legend>
                         Créer un compte
                     </legend>
-                    <form action="#" method="get" id="creeruncompte">  
+                    <form action="<?php print $_SERVER["PHP_SELF"]; ?>" method="get" id="creeruncompte">  
                         <label for="nomCreerUnCompte">
                          Nom*
                         </label>
