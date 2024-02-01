@@ -18,3 +18,4 @@
         }
 
 $_page = new Page();
+?>
