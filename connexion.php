@@ -14,8 +14,8 @@
     </figure>
     <ul class="menu_gmail">       
         <li class="item"><a class="menu__item" href="#pour_les_pros">pour les pros</a></li>
-        <li class="item"><a class="menu__item  active-page" href="#connexion">connexion</a></li>
-        <li class="item"><a class="menu__item" href="#creer_un_compte">créer un compte</a></li>
+        <li class="item"><a class="menu__item  active-page" href="./connexion.php">connexion</a></li>
+        <li class="item"><a class="menu__item active-page" href="./index.php">créer un compte</a></li>
     </ul>    
     
 </header>
@@ -38,7 +38,7 @@
                     <legend>
                         Connectez-vous à votre compte
                     </legend>
-                    <form action="#" method="get">  
+                    <form action="<?= $_SERVER["PHP_SELF"]; ?>" method="post">  
                         <label for="emailConnexion">
                         Mail ou login*
                         </label>
@@ -66,7 +66,10 @@
                         type="submit" 
                         value="connexion à votre compte">
                     </form>
-                </fieldset>    
+                </fieldset>  
+                <?php
+                   include_once __DIR__ ."/pages/connexionBdd.inc.php"
+                ?>  
             </div>
             <!-- #fin du formulaire pour créer un compte  -->
         

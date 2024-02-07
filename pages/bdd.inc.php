@@ -49,6 +49,8 @@
                 $requete->execute();
     
                 echo "Enregistrement réussi !";
+                
+                exit;
             } catch (PDOException $e) {
                 echo "Erreur de connexion à la base de données : " . $e->getMessage();
             }

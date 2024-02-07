@@ -9,8 +9,8 @@
     </figure>
     <ul class="menu_gmail">       
         <li class="item"><a class="menu__item" href="#pour_les_pros">pour les pros</a></li>
-        <li class="item"><a class="menu__item" href="./connexion.html" target="blank">connexion</a></li>
-        <li class="item"><a class="menu__item active-page2" href="#creer_un_compte">créer un compte</a></li>
+        <li class="item"><a class="menu__item active-page" href="./connexion.php" target="blank">connexion</a></li>
+        <li class="item"><a class="menu__item active-page" href="./index.php">créer un compte</a></li>
     </ul>    
     
 </header>
@@ -27,7 +27,7 @@
             <div class="bouton_creer_un_compte">
                 <a class="bouton_compte" href="#creer_un_compte" target="blank">créer un compte</a>
             </div>
-            <a class="bouton_fleche" type="button" href="#creer_un_compte">
+            <a class="bouton_fleche" href="#creer_un_compte">
                 <img class="fleche" id="fleche" src="./asset/arrow.png" alt="fleche du bas">
             </a>
     </div>
@@ -50,8 +50,8 @@
                     <legend>
                         Créer un compte
                     </legend>
-                    <!-- méthode POST car PHP en post -->
-                    <form action="<?= $_SERVER["PHP_SELF"]; ?>" method="post" id="creeruncompte">  
+                    <!-- méthode POST car PHP en post action=lien vers autre page -->
+                    <form action="bdd.inc.php" method="post" id="creeruncompte">  
                         <label for="nomCreerUnCompte">
                          Nom*
                         </label>
@@ -105,7 +105,7 @@
                     </form>
                 </fieldset>
                 <?php
-                   include_once __DIR__ ."/pages/bdd.inc.php"
+                   include_once __DIR__ ."/bdd.inc.php"
                 ?>
             </div>
         <!-- #fin du formulaire pour créer un compte  -->
