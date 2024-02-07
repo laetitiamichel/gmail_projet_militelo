@@ -12,10 +12,7 @@
     $motDePasse = "root";
     
 # Vérifier si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données du formulaire
-    $mail = $_POST["mail"];
-    $password = $_POST["password"];
+if(isset($_POST['mail']) && isset($_POST['password'])){
 
     try {
         // Connexion à la base de données avec PDO
@@ -28,10 +25,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $requete->execute();
         $utilisateur = $requete->fetch(PDO::FETCH_ASSOC);
 
+        // Vérifier si l'ID de l'utilisateur est stocké dans la session
+/*     if (isset($_SESSION['ID'])) {
+        $userID = $_SESSION['ID'];
+        echo "L'utilisateur est connecté avec l'ID : $userID";
+    } else {
+        echo "Aucun utilisateur n'est connecté.";
+    } */
         // Vérifier si l'utilisateur existe et si le mot de passe est correct
         if ($utilisateur && password_verify($password, $utilisateur["password"])) {
-            // L'utilisateur est authentifié, vous pouvez effectuer d'autres actions comme rediriger vers une page sécurisée
+            // L'utilisateur est authentifié
+            // Stocker l'ID de l'utilisateur dans la session
+            $_SESSION['ID'] = $utilisateur['ID'];
+            
             echo "Connexion réussie !";
+
         } else {
             // Identifiants invalides
             echo "Adresse email ou mot de passe incorrect.";

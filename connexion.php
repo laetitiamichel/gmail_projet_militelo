@@ -27,17 +27,24 @@
          
        <!--  #page 2 GMAIL => formulaire CONNEXION -->
         <div class="formulaire_connexion" id="connexion">
+        <?php
+            $prenom = $_SESSION["prenom"];
+        ?>
             <h1 class="h1_formulaire_connexion">
-                Bienvenue dans votre espace null
+                Bienvenue dans votre espace <?php $prenom; ?>
             </h1>
             
            <!--  #formulaire pour se connecter -->
             <div class="inner-form_connexion" aria-labelledby="connexion emailConnexion mdpconnexion btnConnexion">
                 <!-- encadré qui contient le formulaire-->
+                <?php
+                        include_once __DIR__ ."/pages/connexionBdd.inc.php"
+                    ?>  
                 <fieldset> 
                     <legend>
                         Connectez-vous à votre compte
                     </legend>
+                    
                     <form action="<?= $_SERVER["PHP_SELF"]; ?>" method="post">  
                         <label for="emailConnexion">
                         Mail ou login*
@@ -45,7 +52,7 @@
                             <input 
                             id="emailConnexion"
                             type="email"
-                            name="Mail"
+                            name="mail"
                             placeholder="giusmili67@gmail.com"
                             aria-required="true"
                             >
@@ -67,9 +74,7 @@
                         value="connexion à votre compte">
                     </form>
                 </fieldset>  
-                <?php
-                   //include_once __DIR__ ."/connexionBdd.inc.php"
-                ?>  
+                
             </div>
             <!-- #fin du formulaire pour créer un compte  -->
         
