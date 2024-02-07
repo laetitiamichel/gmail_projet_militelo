@@ -5,16 +5,17 @@
   # retester en se connectant avec les mêmes paramètres d'enregistrement
   # confère exo user_connextion
 
+    // Configuration de la base de données
+    $serveur = "localhost";
+    $nomBaseDeDonnees = "creer_un_compte";
+    $utilisateur = "root";
+    $motDePasse = "root";
+    
 # Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire
     $mail = $_POST["mail"];
     $password = $_POST["password"];
-
-    // Valider les données (vous pouvez ajouter des validations supplémentaires si nécessaire)
-
-    // Vérifier les informations de connexion dans la base de données
-    require_once("configBdd.inc.php"); // Inclure le fichier de configuration de la base de données
 
     try {
         // Connexion à la base de données avec PDO

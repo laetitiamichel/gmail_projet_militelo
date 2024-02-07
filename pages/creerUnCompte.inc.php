@@ -10,7 +10,7 @@
     <ul class="menu_gmail">       
         <li class="item"><a class="menu__item" href="#pour_les_pros">pour les pros</a></li>
         <li class="item"><a class="menu__item active-page" href="./connexion.php" target="blank">connexion</a></li>
-        <li class="item"><a class="menu__item active-page" href="./index.php">créer un compte</a></li>
+        <li class="item"><a class="menu__item " href="./index.php">créer un compte</a></li>
     </ul>    
     
 </header>
@@ -51,7 +51,7 @@
                         Créer un compte
                     </legend>
                     <!-- méthode POST car PHP en post action=lien vers autre page -->
-                    <form action="bdd.inc.php" method="post" id="creeruncompte">  
+                    <form action="index.php" method="post" id="creeruncompte">  
                         <label for="nomCreerUnCompte">
                          Nom*
                         </label>

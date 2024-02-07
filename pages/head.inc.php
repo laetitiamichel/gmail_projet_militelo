@@ -1,5 +1,6 @@
 <!-- ici on fait appel au controller pour activer les variables et la class: sinon le fichier ne s'execute pas-->
 <?php
+session_start();
     include_once __DIR__ ."/controller.inc.php";
 ?>
 <!DOCTYPE html>

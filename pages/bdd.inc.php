@@ -1,6 +1,4 @@
 <?php
- 
-
     // Configuration de la base de données
     $serveur = "localhost";
     $nomBaseDeDonnees = "creer_un_compte";
@@ -48,8 +46,9 @@
                 // Exécuter la requête
                 $requete->execute();
     
-                echo "Enregistrement réussi !";
-                
+                    echo "Enregistrement réussi !";
+                    //header('Location: connexion.php')
+
                 exit;
             } catch (PDOException $e) {
                 echo "Erreur de connexion à la base de données : " . $e->getMessage();
