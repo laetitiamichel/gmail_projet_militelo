@@ -18,5 +18,5 @@
     <link rel="stylesheet" href="<?= $_page->_link_formulaire_page_1 ?>">
     <link rel="stylesheet" href="<?= $_page->_link_header ?>">
     <link rel="stylesheet" href="<?= $_page->_link_reset ?>">
-    <title><?= $_page->_title ?></title>
+    <title><?= title ?></title>
 </head>
