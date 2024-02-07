@@ -1,4 +1,4 @@
-Lien du site = [accueil](https://laetitiamichel.github.io/gmail_projet_militelo/)
+Lien du site = [accueil](https://laetitiamichel.github.io/gmail_projet_militelo/))
 
 # CHARTE GRAPHIQUE =
 
