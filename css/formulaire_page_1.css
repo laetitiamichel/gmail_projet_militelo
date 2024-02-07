@@ -25,9 +25,7 @@
     text-align: center;
     align-items: center;
     padding: 3rem;
-    font-size: small;
-  
-    
+    font-size: small; 
    }
 
 input[type="text"], 
@@ -35,7 +33,7 @@ input[type="password"],
 input[type="email"],
 input[type="submit"]{
     border: 0;
-    background: none;
+   /*  background: none; */
     
 }
 
@@ -64,13 +62,13 @@ input[type="submit"]{
     width: 100%;
     line-height: 3.5rem;
     padding: 0 .1rem;
-   
+
 }
 
 .inner-form_creer_un_compte form input[type="text"]{
     border-bottom: solid .1rem var(--bgcolor-formulaire-gris);
-    background: rgb(242,242,242, .8); 
-    color: #0000;
+    background: rgb(242,242,242, .8);
+    color:black;
     font-weight: lighter;
     font-size: inherit;
 }
