@@ -111,7 +111,12 @@
         <!-- #fin du formulaire pour créer un compte  -->
         </div>
 </main>
-        
+
+<!-- fin de la session de l'utilisateur: -->
+        <?php
+            session_unset();
+            session_destroy();
+        ?> 
 <footer>
     <?= Page::$_copyrigt ?>
 </footer>

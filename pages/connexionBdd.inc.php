@@ -10,7 +10,29 @@
     $nomBaseDeDonnees = "creer_un_compte";
     $utilisateur = "root";
     $motDePasse = "root";
-    
+
+    // class pour récupérer l'id de la session:
+    class Login{
+        static function connect(){
+            
+            //connexion user
+            if(isset($_POST['password']) && isset($_COOKIE['PHPSESSID'])){
+                
+                $password = $_POST["password"];
+                if(!$password){
+                    print "<section><p>Remplir les champs</p></section>";
+                }
+                else{
+                    $_SESSION["nom"] = $password;
+                    print "<section><p class=\"button-success-color\">Bonjour : ".$_SESSION["nom"]."</p></section>";
+                    print "<section><p><a href=\"session_user.php\" class=\"button-success button-success-color\">Vos infos</a></p></section>";
+                    // afficher la section récupérée
+                    echo '<section><p class="mark_id">ID de session récuperé via $_COOKIE : <br>'.$_COOKIE["PHPSESSID"].'</p></section>';
+                }
+            }
+        }
+    } 
+       
 # Vérifier si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données du formulaire

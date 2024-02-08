@@ -1,4 +1,6 @@
 <?php
+    /* session_start(); */
+    $_id_session=session_id();
 # inclusion du head
     include_once __DIR__ ."/pages/head.inc.php";
 ?>
@@ -77,7 +79,17 @@
         <!-- #fin de la page 1 -->
         
 </main>
-        
+
+<?php
+    $_id_session ? 
+    print "<em class=\"mark_id\">ID de session récupérer via session_id()<br>" .$_id_session. "<br></em>" : 
+    false;
+    
+    require_once __DIR__ . "/pages/connexionBdd.inc.php";
+    # appel de la class Login
+    Login::connect();
+?> 
+
 <footer>
     <?= Page::$_copyrigt ?>
 </footer>
