@@ -82,7 +82,7 @@
                             id="emailconnexion"
                             type="email"
                             name="mail"
-                            placeholder="giusmili67@gmail.com"
+                            placeholder=""
                             aria-required="true"
                             >
         
@@ -93,7 +93,7 @@
                             id="mdpCreation" 
                             type="password"
                             name="password"
-                            placeholder="*****"
+                            placeholder=""
                             aria-required="true"
                             >
         
@@ -117,8 +117,6 @@
             session_unset();
             session_destroy();
         ?> 
-<footer>
-    <?= Page::$_copyrigt ?>
-</footer>
+
 </body>
 </html>

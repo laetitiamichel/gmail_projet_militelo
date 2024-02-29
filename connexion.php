@@ -48,7 +48,7 @@
                             id="emailConnexion"
                             type="email"
                             name="Mail"
-                            placeholder="giusmili67@gmail.com"
+                            placeholder=""
                             aria-required="true"
                             >
         
@@ -59,7 +59,7 @@
                             id="mdpconnexion" 
                             type="password"
                             name="password"
-                            placeholder="*****"
+                            placeholder=""
                             aria-required="true"
                             >
         

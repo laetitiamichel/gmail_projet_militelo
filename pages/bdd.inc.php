@@ -46,12 +46,11 @@
                 // Exécuter la requête
                 $requete->execute();
     
-                    echo "Enregistrement réussi !";
-                    //header('Location: connexion.php')
-
+                    echo 'Enregistrement réussi ! <a href="connexion.php">connectez-vous</a>';
                 exit;
             } catch (PDOException $e) {
-                echo "Erreur de connexion à la base de données : " . $e->getMessage();
+                echo "<span class='error-message'>Erreur de connexion à la base de données : </span>" . $e->getMessage();
+
             }
         } else {
             // Afficher les erreurs
