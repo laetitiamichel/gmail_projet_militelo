@@ -103,3 +103,7 @@ input[type="submit"]{
     line-height: 5rem;
     border-radius: .4rem;
  }
+
+ .error-message {
+    color: red;
+}
