@@ -1,5 +1,4 @@
 <?php
-# inclusion du head
     include_once __DIR__ ."/pages/head.inc.php";
 ?>
 

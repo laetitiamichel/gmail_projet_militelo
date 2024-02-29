@@ -1,7 +1,6 @@
 <?php
     /* session_start(); */
     $_id_session=session_id();
-# inclusion du head
     include_once __DIR__ ."/pages/head.inc.php";
 ?>
 
