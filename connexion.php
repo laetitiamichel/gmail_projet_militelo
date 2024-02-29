@@ -94,4 +94,3 @@
     <?= Page::$_copyrigt ?>
 </footer>
 </body>
-</html>
