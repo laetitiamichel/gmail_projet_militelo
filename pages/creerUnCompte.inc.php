@@ -9,8 +9,8 @@
     </figure>
     <ul class="menu_gmail">       
         <li class="item"><a class="menu__item" href="#pour_les_pros">pour les pros</a></li>
-        <li class="item"><a class="menu__item active-page" href="./connexion.php" target="blank">connexion</a></li>
-        <li class="item"><a class="menu__item " href="./index.php">créer un compte</a></li>
+        <li class="item"><a class="menu__item" href="./connexion.html" target="blank">connexion</a></li>
+        <li class="item"><a class="menu__item active-page2" href="#creer_un_compte">créer un compte</a></li>
     </ul>    
     
 </header>
@@ -27,7 +27,7 @@
             <div class="bouton_creer_un_compte">
                 <a class="bouton_compte" href="#creer_un_compte" target="blank">créer un compte</a>
             </div>
-            <a class="bouton_fleche" href="#creer_un_compte">
+            <a class="bouton_fleche" type="button" href="#creer_un_compte">
                 <img class="fleche" id="fleche" src="./asset/arrow.png" alt="fleche du bas">
             </a>
     </div>
@@ -45,13 +45,11 @@
            <!--  #formulaire pour créer un compte -->
             <div class="inner-form_creer_un_compte" 
             aria-labelledby="creeruncompte nomCreerUnComptee prenomCreerUnCompte emailcreation mdpCreation btncreationcompte">
-                  
-            <fieldset> <!-- encadré qui contient le formulaire-->
+                <fieldset> <!-- encadré qui contient le formulaire-->
                     <legend>
                         Créer un compte
                     </legend>
-                    <!-- méthode POST car PHP en post action=lien vers autre page -->
-                    <form action="index.php" method="post" id="creeruncompte">  
+                    <form action="#" method="get" id="creeruncompte">  
                         <label for="nomCreerUnCompte">
                          Nom*
                         </label>
@@ -70,7 +68,7 @@
                             <input
                             id="prenomConnexion"
                             type="text"
-                            name="prenom"
+                            name="Prénom"
                             placeholder="Votre Prénom"
                             aria-required="true"
                             >
@@ -81,7 +79,7 @@
                             <input 
                             id="emailconnexion"
                             type="email"
-                            name="mail"
+                            name="Mail"
                             placeholder="giusmili67@gmail.com"
                             aria-required="true"
                             >
@@ -103,20 +101,12 @@
                             value="valider votre compte"
                             >
                     </form>
-                </fieldset>
-                <?php
-                   include_once __DIR__ ."/bdd.inc.php"
-                ?>
+                </fieldset>    
             </div>
         <!-- #fin du formulaire pour créer un compte  -->
         </div>
 </main>
-
-<!-- fin de la session de l'utilisateur: -->
-        <?php
-            session_unset();
-            session_destroy();
-        ?> 
+        
 <footer>
     <?= Page::$_copyrigt ?>
 </footer>

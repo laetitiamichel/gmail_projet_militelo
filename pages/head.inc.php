@@ -1,10 +1,5 @@
-<!-- ici on fait appel au controller pour activer les variables et la class: sinon le fichier ne s'execute pas-->
-<?php
-session_start();
-    include_once __DIR__ ."/controller.inc.php";
-?>
 <!DOCTYPE html>
-<html lang="<?= Page::$_lang[0] ?>">
+<html lang="<?= Page::$_lang ?>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,5 +14,5 @@ session_start();
     <link rel="stylesheet" href="<?= $_page->_link_formulaire_page_1 ?>">
     <link rel="stylesheet" href="<?= $_page->_link_header ?>">
     <link rel="stylesheet" href="<?= $_page->_link_reset ?>">
-    <title><?= title ?></title>
+    <title><?= $_page->_title ?></title>
 </head>
